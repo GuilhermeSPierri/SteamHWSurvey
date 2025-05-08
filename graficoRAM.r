@@ -3,7 +3,7 @@ library(dplyr)
 library(stringr)
 
 # Carregar e processar os dados
-dados_ram <- read.csv("shs.csv") %>% 
+dados_ram <- read.csv("database.csv") %>% 
   filter(category == "System RAM") %>% 
   mutate(
     # Extrair valor numérico e ordenar categorias
